@@ -1,0 +1,44 @@
+.footer {
+  padding: 40px;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  margin-top: 80px;
+
+  .small {
+    font-size: 14px;
+    margin: 0;
+    width: 50%;
+  }
+}
+
+.footer > div:nth-of-type(4) {
+  a {
+    color: #00000080 !important;
+  }
+
+  a:hover {
+    color: #000000 !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .footer {
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .bottom {
+    display: block;
+
+    .small {
+      padding-bottom: 20px;
+      width: 100%;
+    }
+  }
+}
