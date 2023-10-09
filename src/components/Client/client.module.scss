@@ -1,0 +1,29 @@
+.main {
+  padding: 0px 40px 100px 40px;
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .clients {
+      margin: 100px 40px 0px 40px;
+      display: grid;
+      grid-template-columns: repeat(3, 100px);
+      gap: 40px;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main {
+    padding: 0px 20px 100px 20px !important;
+  }
+  .clients {
+    grid-template-columns: repeat(2, 100px) !important;
+  }
+}

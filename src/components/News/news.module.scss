@@ -1,0 +1,37 @@
+.main {
+  padding: 0px 40px 100px 40px !important;
+}
+
+.news {
+  overflow: scroll;
+  margin: 40px;
+
+  .container {
+    display: flex;
+    gap: 40px;
+
+    .inner {
+      img {
+        margin-bottom: 20px;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+  }
+}
+
+.title {
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 600px) {
+  .main {
+    padding: 0px 20px 100px 20px !important;
+  }
+
+  .news {
+    padding-top: 40px;
+    margin: 0px !important;
+  }
+}
