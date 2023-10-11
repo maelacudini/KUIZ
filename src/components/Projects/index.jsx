@@ -38,7 +38,7 @@ export default function index() {
           <img width={300} height={300} alt={project.title} src={project.url} />
           <div className="row">
             <div className="col-md-6"></div>
-            <div className="col-md-6">
+            <div className="col-md-6" style={{ paddingLeft: "40px" }}>
               <p className={style.projectitle}>{project.title}</p>
               <p>{project.description}</p>
             </div>
