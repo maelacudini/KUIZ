@@ -39,7 +39,7 @@ export default function Home() {
       <Projects />
       <Client />
       <News />
-      <Vision />
+      <Vision y={y} />
       <About />
       <Footer y={y} />
     </main>

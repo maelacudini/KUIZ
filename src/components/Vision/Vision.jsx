@@ -35,7 +35,7 @@ export default function Vision() {
         width={"100%"}
         height={"auto"}
       >
-        <source src="https://static.vecteezy.com/system/resources/previews/029/026/989/mp4/people-in-the-modern-art-museum-pompidou-centre-free-video.mp4" />
+        <source src="./video.mp4" type="video/mp4" />
       </video>
     </div>
   );

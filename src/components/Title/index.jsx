@@ -30,10 +30,31 @@ export default function Index() {
     return easedScrollProgress;
   };
 
+  //get height of display
+  useEffect(() => {
+    const displayHeight = document.getElementById("displayHeight");
+    const setVideoHeight = () => {
+      if (displayHeight) {
+        displayHeight.style.height = `${window.innerHeight}px`;
+      }
+    };
+
+    // Set initial height
+    setVideoHeight();
+
+    // Update height on window resize
+    window.addEventListener("resize", setVideoHeight);
+
+    // Cleanup the event listener on component unmount
+    return () => {
+      window.removeEventListener("resize", setVideoHeight);
+    };
+  }, []);
+
   return (
     <main className={style.main}>
       <div ref={container} className={style.container}>
-        <div ref={stickyMask} className={style.stickyMask}>
+        <div id="displayHeight" ref={stickyMask} className={style.stickyMask}>
           <img src="/img.jpg" alt="img" />
         </div>
       </div>

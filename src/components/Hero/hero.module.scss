@@ -5,11 +5,11 @@
   .rounded {
     border-radius: 50px 50px 0px 0px;
     position: absolute;
-    top: -50px;
+    top: -40px;
     left: 0;
     right: 0;
     background-color: black;
-    height: 50px;
+    height: 40px;
   }
 
   .intro {
@@ -51,6 +51,12 @@
   .main {
     padding: 20px 20px 0px 20px;
   }
+
+  .rounded {
+    top: -20px !important;
+    height: 20px !important;
+  }
+
   .link {
     display: unset !important;
     text-align: center;
