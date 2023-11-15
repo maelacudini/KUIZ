@@ -1,7 +1,7 @@
 export default function sitemap() {
   return [
     {
-      url: 'https://https://kuiz-kappa.vercel.app/',
+      url: 'https://kuiz-kappa.vercel.app/',
       lastModified: new Date(),
       changeFrequency: 'yearly',
       priority: 1,
