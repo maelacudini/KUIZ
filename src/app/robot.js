@@ -4,6 +4,6 @@ export default function robots() {
             userAgent: '*',
             allow: '/',
         },
-        sitemap: 'https://https://kuiz-kappa.vercel.app//sitemap.xml',
+        sitemap: 'https://kuiz-kappa.vercel.app//sitemap.xml',
     }
 }
