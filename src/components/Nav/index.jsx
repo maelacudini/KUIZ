@@ -1,10 +1,30 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import style from "./nav.module.scss";
 import { menu } from "./animation";
 import { AnimatePresence, motion } from "framer-motion";
 
 export default function () {
   const [open, setOpen] = useState(false);
+
+  useEffect(() => {
+    const displayHeight = document.getElementById("displayHeight");
+    const setVideoHeight = () => {
+      if (displayHeight) {
+        displayHeight.style.height = `${window.innerHeight}px`;
+      }
+    };
+
+    // Set initial height
+    setVideoHeight();
+
+    // Update height on window resize
+    window.addEventListener("resize", setVideoHeight);
+
+    // Cleanup the event listener on component unmount
+    return () => {
+      window.removeEventListener("resize", setVideoHeight);
+    };
+  }, []);
 
   return (
     <nav className={style.main}>
@@ -27,6 +47,7 @@ export default function () {
             animate="enter"
             exit="exit"
             className={style.offset}
+            id="displayHeight"
           >
             <button
               onClick={() => {
