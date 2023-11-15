@@ -1,35 +1,28 @@
+import { useMotionValue, useTransform, motion, animate } from "framer-motion";
 import style from "./about.module.scss";
+import { useEffect, useState } from "react";
 
 export default function index() {
+  const categories = [
+    { name: "employees", number: 76 },
+    { name: "nations", number: 5 },
+    { name: "awards", number: 12 },
+    { name: "years", number: 7 },
+  ];
+
   return (
     <div className={style.main}>
       <h1>About</h1>
 
       <div className={`row ${style.row}`}>
-        <div className={`col-md-3 ${style.col}`}>
-          <div>
-            <h1>73</h1>
-            <p>employees</p>
+        {categories.map((category, index) => (
+          <div key={index} className={`col-md-3 ${style.col}`}>
+            <div>
+              <motion.h1>{category.number}</motion.h1>
+              <p>{category.name}</p>
+            </div>
           </div>
-        </div>
-        <div className={`col-md-3 ${style.col}`}>
-          <div>
-            <h1>5</h1>
-            <p>nations</p>
-          </div>
-        </div>
-        <div className={`col-md-3 ${style.col}`}>
-          <div>
-            <h1>12</h1>
-            <p>awards</p>
-          </div>
-        </div>
-        <div className={`col-md-3 ${style.col}`}>
-          <div>
-            <h1>7</h1>
-            <p>years</p>
-          </div>
-        </div>
+        ))}
       </div>
 
       <div>

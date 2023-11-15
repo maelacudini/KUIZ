@@ -1,0 +1,25 @@
+.vision {
+  margin: 100px 0px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  video {
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .desc {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px;
+
+    div {
+      display: flex;
+      overflow-y: hidden;
+      margin-right: 8px;
+    }
+  }
+}

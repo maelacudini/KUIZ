@@ -1,5 +1,16 @@
 .main {
-  padding: 40px 40px 0px 40px;
+  padding: 0px 40px 0px 40px;
+  position: relative;
+
+  .rounded {
+    border-radius: 50px 50px 0px 0px;
+    position: absolute;
+    top: -50px;
+    left: 0;
+    right: 0;
+    background-color: black;
+    height: 50px;
+  }
 
   .intro {
     min-height: 50vh;

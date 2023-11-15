@@ -2,6 +2,7 @@ import { useRef } from "react";
 import style from "./hero.module.scss";
 import { useScroll, useTransform, motion } from "framer-motion";
 import Nav from "../Nav";
+import { generals } from "@/utils/animate";
 
 export default function index() {
   const ref = useRef(null);
@@ -11,7 +12,10 @@ export default function index() {
   const rotate = useTransform(scrollYProgress, [0, 1], [0, 360]);
   return (
     <div ref={ref} className={style.main}>
+      <div id="nav" className={style.rounded}></div>
+
       <Nav />
+
       <div className={style.intro}>
         <div>
           <h1>Discover Our Artistic Endeavors</h1>
@@ -28,13 +32,22 @@ export default function index() {
       </div>
 
       <div className={style.link}>
-        <a href="#">See how we can help.</a>
-        <a href="#">Learn more about the museum.</a>
+        <a href="#">See how we can help</a>
+        <a href="#">Learn more about the museum</a>
       </div>
 
       <div className={`row ${style.row}`}>
         <div className={`col-md-8 ${style.col}`}>
-          <img width={300} height={300} alt="image" src="/img2.jpg" />
+          <motion.img
+            variants={generals}
+            initial="initial"
+            whileInView="animate"
+            custom={1}
+            width={300}
+            height={300}
+            alt="image"
+            src="/img2.jpg"
+          />
           <p>Ephemeral Expressions</p>
           <p>
             Delve into the world of fleeting beauty and emotions in a series of
@@ -43,7 +56,16 @@ export default function index() {
           </p>
         </div>
         <div className={`col-md-4 ${style.col}`}>
-          <img width={300} height={300} alt="image" src="/img3.jpg" />
+          <motion.img
+            variants={generals}
+            initial="initial"
+            whileInView="animate"
+            custom={2}
+            width={300}
+            height={300}
+            alt="image"
+            src="/img3.jpg"
+          />
           <p>Cultural Kaleidoscope</p>
           <p>
             Celebrate global diversity through a curated collection of artifacts

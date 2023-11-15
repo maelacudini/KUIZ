@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { motion } from "framer-motion";
 import style from "./news.module.scss";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
@@ -7,6 +7,7 @@ import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "swiper/css/scrollbar";
+import { generals } from "@/utils/animate";
 
 const news = [
   {
@@ -66,25 +67,26 @@ export default function index() {
         {news.map((n, index) => (
           <SwiperSlide key={index}>
             <div className={style.news}>
-              <img src={n.url} alt={n.title} width={"100%"} height={"200px"} />
+              <motion.img
+                variants={generals}
+                initial="initial"
+                whileInView="animate"
+                custom={index}
+                src={n.url}
+                alt={n.title}
+                width={"100%"}
+                height={"200px"}
+              />
               <p className={style.title}>{n.title}</p>
-              <p>{n.description}</p>
+              <p>{n.description.slice(0, 80)}...</p>
+              <br />
+              <a href="#" className={style.more}>
+                Read more
+              </a>
             </div>
           </SwiperSlide>
         ))}
       </Swiper>
-
-      {/* <div className={style.news}>
-        <div className={style.container}>
-          {news.map((n, index) => (
-            <div key={index} className={style.inner}>
-              <Image src={n.url} alt={n.title} width={300} height={200} />
-              <p className={style.title}>{n.title}</p>
-              <p>{n.description}</p>
-            </div>
-          ))}
-        </div>
-      </div> */}
     </div>
   );
 }

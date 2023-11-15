@@ -8,10 +8,18 @@ import Client from '../components/Client';
 import News from '../components/News';
 import About from '../components/About';
 import Footer from '../components/Footer';
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 import Lenis from '@studio-freight/lenis';
+import { useScroll, useTransform } from 'framer-motion';
+import Vision from '@/components/Vision/Vision';
 
 export default function Home() {
+
+  const ref = useRef(null)
+  const { scrollYProgress } = useScroll({
+    target: ref
+  })
+  const y = useTransform(scrollYProgress, [0, 1], ['-700px', '0px'])
 
   useEffect(() => {
     const lenis = new Lenis()
@@ -25,14 +33,15 @@ export default function Home() {
   }, [])
 
   return (
-    <main>
+    <main ref={ref}>
       <Title />
       <Hero />
       <Projects />
       <Client />
       <News />
+      <Vision />
       <About />
-      <Footer />
+      <Footer y={y} />
     </main>
   );
 }

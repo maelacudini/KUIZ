@@ -1,5 +1,6 @@
-import Image from "next/image";
+import { generals } from "@/utils/animate";
 import style from "./projects.module.scss";
+import { motion } from "framer-motion";
 
 const projects = [
   {
@@ -35,7 +36,16 @@ export default function index() {
 
       {projects.map((project, index) => (
         <div key={index} className={style.project}>
-          <img width={300} height={300} alt={project.title} src={project.url} />
+          <motion.img
+            variants={generals}
+            initial="initial"
+            whileInView="animate"
+            custom={index}
+            width={300}
+            height={300}
+            alt={project.title}
+            src={project.url}
+          />
           <div className="row">
             <div className="col-md-6"></div>
             <div className="col-md-6" style={{ paddingLeft: "40px" }}>

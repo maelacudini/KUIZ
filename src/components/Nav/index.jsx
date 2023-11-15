@@ -7,7 +7,7 @@ export default function () {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav id="nav" className={style.main}>
+    <nav className={style.main}>
       <div className={style.nav}>
         <h2>KUIZ</h2>
         <button

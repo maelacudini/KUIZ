@@ -3,7 +3,7 @@ import { Inter } from 'next/font/google'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Kuiz | Art Museum',
+  title: 'Kuiz® | Art Museum',
   description: 'Made by Maela Cudini, 2023',
 }
 
