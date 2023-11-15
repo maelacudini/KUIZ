@@ -17,7 +17,7 @@ export default function index() {
             width={100}
             height={100}
             alt="image"
-            src="/KUIZ/logo.svg"
+            src="/logo.svg"
           />
           <motion.img
             variants={animateimg}
@@ -27,7 +27,7 @@ export default function index() {
             width={100}
             height={100}
             alt="image"
-            src="/KUIZ/logo.svg"
+            src="/logo.svg"
           />
           <motion.img
             variants={animateimg}
@@ -37,7 +37,7 @@ export default function index() {
             width={100}
             height={100}
             alt="image"
-            src="/KUIZ/logo.svg"
+            src="/logo.svg"
           />
           <motion.img
             variants={animateimg}
@@ -47,7 +47,7 @@ export default function index() {
             width={100}
             height={100}
             alt="image"
-            src="/KUIZ/logo.svg"
+            src="/logo.svg"
           />
           <motion.img
             variants={animateimg}
@@ -57,7 +57,7 @@ export default function index() {
             width={100}
             height={100}
             alt="image"
-            src="/KUIZ/logo.svg"
+            src="/logo.svg"
           />
           <motion.img
             variants={animateimg}
@@ -67,7 +67,7 @@ export default function index() {
             width={100}
             height={100}
             alt="image"
-            src="/KUIZ/logo.svg"
+            src="/logo.svg"
           />
         </div>
       </div>

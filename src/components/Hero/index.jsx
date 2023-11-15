@@ -18,7 +18,7 @@ export default function index() {
 
           <motion.img
             className={style.logo}
-            src="/KUIZ/logo.svg"
+            src="/logo.svg"
             alt="logo"
             style={{ borderRadius: 0, rotate: rotate }}
             width={"150px"}
@@ -34,7 +34,7 @@ export default function index() {
 
       <div className={`row ${style.row}`}>
         <div className={`col-md-8 ${style.col}`}>
-          <img width={300} height={300} alt="image" src="/KUIZ/img2.jpg" />
+          <img width={300} height={300} alt="image" src="/img2.jpg" />
           <p>Ephemeral Expressions</p>
           <p>
             Delve into the world of fleeting beauty and emotions in a series of
@@ -43,7 +43,7 @@ export default function index() {
           </p>
         </div>
         <div className={`col-md-4 ${style.col}`}>
-          <img width={300} height={300} alt="image" src="/KUIZ/img3.jpg" />
+          <img width={300} height={300} alt="image" src="/img3.jpg" />
           <p>Cultural Kaleidoscope</p>
           <p>
             Celebrate global diversity through a curated collection of artifacts

@@ -6,13 +6,13 @@ const projects = [
     title: "The Enchanted Garden",
     description:
       "Step into the enchanting world of 'The Enchanted Garden,' a mesmerizing multimedia installation that blurs the line between reality and imagination. This immersive experience invites you to wander through a lush, otherworldly landscape, where art and nature converge. Let the interplay of light, sound, and vibrant flora transport you to a realm of wonder and contemplation, where the boundaries of artistry are stretched to their limits.",
-    url: "/KUIZ/img4.jpg",
+    url: "/img4.jpg",
   },
   {
     title: "Resonance: A Journey Through Time",
     description:
       "Embark on a journey through the annals of history with 'Resonance,' an exhibition that bridges the past and the present. This project takes you on a captivating exploration of art's enduring impact on culture and society. Through a diverse collection of artifacts, paintings, and interactive installations, 'Resonance' reveals the timeless connections that bind humanity and art, inviting you to reflect on the rich tapestry of our shared heritage.",
-    url: "/KUIZ/img5.jpg",
+    url: "/img5.jpg",
   },
 ];
 

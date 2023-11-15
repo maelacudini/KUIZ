@@ -34,7 +34,7 @@ export default function Index() {
     <main className={style.main}>
       <div ref={container} className={style.container}>
         <div ref={stickyMask} className={style.stickyMask}>
-          <img src="/KUIZ/img.jpg" alt="img" />
+          <img src="/img.jpg" alt="img" />
         </div>
       </div>
     </main>

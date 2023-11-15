@@ -1,24 +1,40 @@
 .main {
   padding: 0px 40px 100px 40px !important;
-}
 
-.news {
-  overflow: scroll;
-  margin: 40px;
-
-  .container {
-    display: flex;
-    gap: 40px;
-
-    .inner {
-      img {
-        margin-bottom: 20px;
-        object-fit: cover;
-        object-position: center;
-      }
+  .swiper-slide {
+    .news {
+      width: 350px !important;
     }
   }
+
+  img {
+    object-fit: cover;
+    object-position: center;
+    margin-bottom: 20px;
+  }
+
+  span {
+    background-color: white;
+  }
 }
+
+// .news {
+//   overflow: scroll;
+//   margin: 40px;
+
+//   .container {
+//     display: flex;
+//     gap: 40px;
+
+//     .inner {
+//       img {
+//         margin-bottom: 20px;
+//         object-fit: cover;
+//         object-position: center;
+//       }
+//     }
+//   }
+//}
 
 .title {
   text-transform: uppercase;
